@@ -10,6 +10,7 @@
 		21550087FB49CD9FFB5C6E42 /* Pods_Todoey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 073D271F7472FEBF74FEB64B /* Pods_Todoey.framework */; };
 		631E1AAB225347BB00CF5F76 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631E1AAA225347BB00CF5F76 /* Item.swift */; };
 		631E1AAD225347C600CF5F76 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631E1AAC225347C600CF5F76 /* Category.swift */; };
+		6332064722537FE800B4341C /* SwipeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6332064622537FE800B4341C /* SwipeTableViewController.swift */; };
 		63D90A8D225215B20091CC85 /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D90A8C225215B20091CC85 /* CategoryTableViewController.swift */; };
 		63FB7D9D224B7C9800B01C8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FB7D9C224B7C9800B01C8C /* AppDelegate.swift */; };
 		63FB7D9F224B7C9800B01C8C /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FB7D9E224B7C9800B01C8C /* TodoListViewController.swift */; };
@@ -23,6 +24,7 @@
 		26B4A7F5ECABDFAD996D9066 /* Pods-Todoey.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Todoey.debug.xcconfig"; path = "Target Support Files/Pods-Todoey/Pods-Todoey.debug.xcconfig"; sourceTree = "<group>"; };
 		631E1AAA225347BB00CF5F76 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		631E1AAC225347C600CF5F76 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		6332064622537FE800B4341C /* SwipeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTableViewController.swift; sourceTree = "<group>"; };
 		63D90A8C225215B20091CC85 /* CategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
 		63FB7D99224B7C9800B01C8C /* Todoey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todoey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63FB7D9C224B7C9800B01C8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 			children = (
 				63FB7D9E224B7C9800B01C8C /* TodoListViewController.swift */,
 				63D90A8C225215B20091CC85 /* CategoryTableViewController.swift */,
+				6332064622537FE800B4341C /* SwipeTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -207,15 +210,19 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Todoey/Pods-Todoey-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwipeCellKit/SwipeCellKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwipeCellKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -255,6 +262,7 @@
 				63FB7D9F224B7C9800B01C8C /* TodoListViewController.swift in Sources */,
 				63FB7D9D224B7C9800B01C8C /* AppDelegate.swift in Sources */,
 				63D90A8D225215B20091CC85 /* CategoryTableViewController.swift in Sources */,
+				6332064722537FE800B4341C /* SwipeTableViewController.swift in Sources */,
 				631E1AAD225347C600CF5F76 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
